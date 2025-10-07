@@ -1,11 +1,25 @@
+# Huutokauppa SPA
 
-Tässä projektissa tehdään SPA sovellus, jossa käyttäjä valitse tuoteitta, joihin tarjoaa hinta pyynnön.
+Tässä projektissa toteutetaan **SPA (Single Page Application)** -tyyppinen sovellus, jossa käyttäjä voi valita tuoteitta ja tehdä niistä hintatarjouksia.
 
-Hinta täytyy olla enemmän mitä jo on tarjottu.
+## Toiminnot
 
-LocalStoragea käytetään näiden tarjouksien tallentamiseen, jottei käyttäjän tarvitse valita hintaa uudestaan.
+- Käyttäjä voi valita yhden tai useamman tuotteen.
+    - Sama tuote voi valita vain kerran.
+- Jokaiselle tuotteelle annetaan **tarjoushinta**, joka täytyy olla suurempi kuin nykyinen korkein tarjous.
+- Tarjoukset tallentuvat **LocalStorageen**, jotta käyttäjän tekemät valinnat ja hinnat säilyvät sivun päivityksen jälkeen.
+- Käyttäjä voi poistaa tuotteita valintalistalta.
+- Kun lähettäjä lähettää tarjouksen, kaikkien valittujen tuotteiden yhteishinta lasketaan ja lähetetään viestinä sivuston ylläpitäjälle.
 
-Käyttäjä pystyy poistamaan listalta valitun tuotteen. Pystyy valitsemaan enemmän kuin yhden tuotteen (muttei samaa tuotetta).
-Tällöin yhteishinta lasketaan ja lähetetään viestinä sivuston hallitsijalle, kun käyttäjä lähettää tarjouksen.
+## Yhteydenotto
 
-Sivustolla on myös yhteydenottolomake jossa käyttäjä voi ottaa yhteyttä kaupatakseen esimerkiksi omia tuotteitaan.
+Sivustolla on myös näkymä **yhteydenottolomake**, jonka kautta käyttäjä voi ottaa yhteyttä esimerkiksi tarjoakseen omia tuotteitaan myyntiin.
+
+## Käytetyt teknologiat
+
+**HTML5**, **CSS**, **JS**, **LocalStorage**
+
+## Kehitysideoita
+
+- Backend-integraatio tarjousten tallentamiseen tietokantaan
+- Käyttäjäkohtainen kirjautuminen ja näiden historia hallinnointi

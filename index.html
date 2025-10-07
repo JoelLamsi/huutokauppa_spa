@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Huutokauppa SPA</title>
+    <link rel="stylesheet" href="style/style.css" />
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#catalog">Tuotteet</a>
+            <a href="#contact">Yhteydenotto</a>
+        </nav>
+    </header>
+    <main>
+        <section id="catalog">
+            <div class="product-catalog">
+                <div class="card" data-name="Kimble" data-price="5">
+                    <h3>Kimble</h3>
+                    <p>Lähtöhinta: 5 €</p>
+                </div>
+                <div class="card" data-name="Muumimuki" data-price="15">
+                    <h3>Muumimuki</h3>
+                    <p>Lähtöhinta: 15 €</p>    
+                </div>
+            </div>
+            <aside class="product-list">
+                <div id="product-collection"></div>
+                <div id="total-div"></div>
+            </aside>
+        </section>
+
+        <section id="contact">
+            <h2>Yhteydenotto</h2>
+            <form id="contactForm">
+                <label>Nimi: <input type="text" name="name" required></label>
+                <label>Sähköposti: <input type="email" name="email" required></label>
+                <label>Viesti: <textarea name="message" required></textarea></label>
+                <button type="submit">Lähetä</button>
+            </form>
+            <div id="messages"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025</p>
+    </footer>
+    <script type="module" src="./src/main.js"></script>
+</body>
+</html>
