@@ -70,6 +70,13 @@ nav a:hover {
   margin-bottom: 0.5rem;
   font-size: 1.2rem;
 }
+.product-catalog .card img {
+    max-width: 250px;
+    max-height: 200px;
+}
+.product-catalog .card small {
+    color: var(--color-muted);
+}
 .product-catalog .card p {
   color: var(--color-muted);
   margin: 0;
