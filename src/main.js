@@ -1,3 +1,6 @@
+import { getWeatherInOulu } from "./weatherApi.js"
+getWeatherInOulu()
+
 const catalogSection = document.getElementById('catalog')
 const contactSection = document.getElementById('contact')
 contactSection.style.display = 'none'
